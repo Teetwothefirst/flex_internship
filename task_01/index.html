@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays in Javascript</title>
+    <style>
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <p id="displayField"></p>
+        <button id="showBtn">Show</button>
+        <button id="addBtn">Add Up</button>
+
+    </div>
+    <script>
+        const animals = ['dogs', 'cats', 'horse', 'giraffe', 'duck', 'turkey']
+        
+        //showBtn
+        document.getElementById('showBtn').addEventListener('click', ()=>{
+            const p = document.getElementById('displayField')
+            p.innerText = animals
+        })
+
+        //addBtn
+        document.getElementById('addBtn').addEventListener('click', ()=>{
+            
+            const p = document.getElementById('displayField')
+            // p.innerText = 
+
+            animals.push('frogs')
+        })
+    </script>
+</body>
+</html>
